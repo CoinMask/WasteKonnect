@@ -1,0 +1,43 @@
+wastekonnect/
+│
+├── client/                      # Frontend (React.js)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/              # Images, logos
+│   │   ├── components/          # Reusable components (Navbar, Cards, etc.)
+│   │   ├── pages/               # Main views (Dashboard, Marketplace, etc.)
+│   │   ├── services/            # Axios calls to backend APIs
+│   │   ├── utils/               # Helpers (formatting, validation)
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+│
+├── server/                      # Backend (Node.js + Express)
+│   ├── controllers/             # Route logic (waste, user, match)
+│   ├── models/                  # Mongoose schemas
+│   ├── routes/                  # Express route handlers
+│   ├── middleware/              # Auth, validation, etc.
+│   ├── utils/                   # Logger, error handler
+│   ├── config/                  # DB and env setup
+│   ├── index.js                 # Entry point
+│   └── package.json
+│
+├── ai-module/                   # Simulated AI Waste Suggestion Engine
+│   ├── mock_data/               # Sample training/test data
+│   ├── logic.py                 # Simulated suggestion script
+│   └── waste_classifier.py      # Placeholder model logic (optional)
+│
+├── blockchain/                  # Smart Contract & Web3 logic
+│   ├── contracts/               # Solidity smart contract
+│   │   └── WasteLogger.sol
+│   ├── scripts/                 # Deployment + interaction scripts
+│   ├── hardhat.config.js
+│   └── README.md
+│
+├── dashboard-data/              # Mock metrics & dashboard data
+│   └── sustainability.json
+│
+├── .env                         # Environment variables
+├── .gitignore
+├── README.md
+└── LICENSE
